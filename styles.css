@@ -1,0 +1,1037 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* || RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* ||VARIABLES */
+:root {
+    /* FONTS */
+    --FF:'COCOGOOSE', sans-serif ;
+
+    /* COLOR */
+    --COLOR1:#272A31;
+    --COLOR2:#EC5242;
+    --COLOR3:#D3D3D3;
+}
+
+/* ||GENERAL STYLE */
+
+ a {
+   text-decoration: none;
+ }
+
+ .hero {
+    /* background-image: url("images/header\ background.jpeg"); */
+    background-repeat: no-repeat;
+    background-size: contain;
+ }
+
+ .hero_box {
+    margin-left: 20px;
+    margin-top: 50px;
+ }
+
+ .hero_heading {
+    color: var(--COLOR2);
+    margin-bottom: 5px;
+ }
+
+ .hero_headingA {
+   color: var(--COLOR2);
+   margin-bottom: 5px;
+   text-align: center;
+ }
+
+ .hero_title {
+    font-family: var(--FF);
+    color: transparent;
+    background-image: url("images/header\ background.jpeg");
+    -webkit-background-clip: text;
+ }
+
+ .hero_titleA {
+   font-family: var(--FF);
+   color: var(--COLOR2);
+   text-align: center;
+ }
+
+ .about {
+   width:420px;
+ }
+
+ .hero_description {
+    margin: 70px 20px 20px 20px;
+    border: 1px solid white;
+    padding:15px;
+    background-color:rgba(202, 199, 199, 0.1);
+    /* font-family: var(--FF); */
+ }
+
+ .hero_descriptionA {
+   margin: 70px 20px 20px 20px;
+   border: 1px solid white;
+   padding:15px;
+   background-color: white;
+   text-align: center;
+   font-family: var(--FF);
+ }
+
+ .des1 {
+   font-family: var(--FF);
+ }
+
+ .des2 {
+    margin-left: 20px;
+    margin-bottom: 9px;
+    color: var(--COLOR1);
+    font-family: var(--FF)
+ }
+
+ .des3 {
+    margin-left: 20px;
+    
+ }
+
+ .container {
+    width:422px;
+    height: 63vh;
+    background-image: url("images/mobile\ background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+  .containerA {
+    width: 420px;
+    height: 56vh;
+    background-image: url("images/mobile\ background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+ } 
+
+ .hamburger_menu {
+    width:48px;
+    height:48px;
+    margin-left: 20px;
+    margin-top: 15px;
+ }
+
+ .menu {
+    display: none;
+ }
+
+ .lecture_icon {
+    width:50px;
+    height:48px;
+    background-color: #D3D3D3;
+ }
+
+ .courses {
+    background-color: var(--COLOR1);
+    background-image: url("images/diamond.png");
+    height: 115vh;
+ }
+
+ ul {
+    list-style-type: none;
+ }
+
+ .programs {
+   text-align: center;
+   padding:50px;
+   color: white;
+   position: relative;
+ }
+
+ .programs::after {
+   content:'';
+   height:2px;
+   width:15%;
+   background:var(--COLOR2);
+   position: absolute;
+   left:155px;
+   bottom:30px;
+ }
+
+ .python,
+ .Java_Programming,
+ .Redux_React,
+ .Andriod_N_Developer,
+ .Cyber_security{
+    display: flex;
+    gap:15px;
+    justify-content: space-between;
+    background-color:rgba(202, 199, 199, 0.1);
+    margin: 0 20px 10px 20px;
+    padding: 20px;
+ }
+
+ .python_course,
+ .Java_course,
+ .RR_course,
+ .AND_course,
+ .CS_course {
+    color: var(--COLOR2);
+    font-family: var(--FF);
+ }
+ 
+ .python_des,
+ .Java_des,
+ .RR_des,
+ .AND_des,
+ .CS_des {
+    color: white;
+    justify-content: flex-end;
+    /* font-family:var(--FF); */
+ }
+ 
+ .Java_des {
+   margin-left: 32px;
+ }
+
+ .RR_des {
+   margin-left: 22px;
+ }
+
+ .python_des {
+   margin-left: 10px;
+ }
+
+ .CS_des {
+   margin-left: 10px;
+ }
+
+ .course_btn {
+   text-align: center;
+   padding:20px;
+   background-color: var(--COLOR2);
+   color: white;
+   display: block;
+   margin: 40px auto;
+   font-family: var(--FF);
+ }
+
+ .course_btn:hover {
+   cursor: pointer;
+   background-color: blue;
+ }
+
+ .featured_lecturers {
+   text-align: center;
+   padding:50px;
+   color: var(--COLOR1);
+   position: relative;
+ }
+
+ .featured_lecturers::after {
+   content:'';
+   height:2px;
+   width:15%;
+   background:var(--COLOR2);
+   position: absolute;
+   left:170px;
+   bottom:30px;
+ }
+
+ .lecturer_icon {
+   width:120px;
+   height:120px;
+   margin: 5px;
+ }
+
+ .python_lecturer,
+ .RR_lecturer,
+ .AND_lecturer,
+ .CS_lecturer,
+ .Dean_lecturer,
+ .IA_lecturer{
+   display: flex;
+   gap:15px;
+   /* justify-content: space-between; */
+   /* background-color:rgba(202, 199, 199, 0.1); */
+   margin: 0 20px 10px 20px;
+   padding: 20px;
+ }
+
+ .Java_Lecturer {
+   display: flex;
+   gap:15px;
+   justify-content: space-between;
+   /* background-color:rgba(202, 199, 199, 0.1); */
+   margin: 0 20px 10px 20px;
+   padding: 20px;
+ }
+
+ .lecturer_name {
+   color: var(--COLOR1);
+   flex-direction: column;
+ }
+
+ .lecturer_title {
+   color: var(--COLOR2);
+   flex-direction: column;
+ }
+
+ .more_info {
+   display: block;
+   text-align: center;
+   padding: 20px;
+   border: 1px solid #272A31;
+   margin: 0 20px 20px 20px;
+ }
+
+ .down {
+   width:16px;
+   height:10px;
+   margin-left: 5px;
+ }
+
+ .more_info:hover {
+   background-color: var(--COLOR2);
+   cursor: pointer;
+ }
+ .more_info:active {
+   background-color: red;
+   cursor: pointer;
+ }
+
+ .contact {
+   background-color: rgb(244, 244, 244);
+   height: 60vh;
+ }
+
+ .contact_orbit {
+   font-size: 30px;
+   line-height: 52px;
+   text-align: center;
+   color: var(--COLOR2);
+   margin-bottom: 12px;
+ }
+
+ form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 20px;
+ }
+ 
+ .list {
+   flex-direction: column;
+ }
+
+ input {
+   background: #fff;
+   border: 1px solid #cfd8dc;
+   border-radius: 8px;
+   width: 300px;
+   height: 40px;
+   margin-top: 15px;
+ }
+
+textarea {
+   background: #fff;
+   border: 1px solid #cfd8dc;
+   border-radius: 8px;
+   width: 300px;
+   height: 150px;
+   margin-top: 15px;
+ }
+
+ .contact-btn {
+   font-family: var(--FF);
+   font-size: 17px;
+   line-height: 24px;
+   display: flex;
+   align-items: center;
+   letter-spacing: 0.03em;
+   width: 150px;
+   height: 50px;
+   color: var(--COLOR2);
+   border-radius: 8px;
+   margin-top: 10px;
+   /* margin-left: 10px; */
+ }
+
+ .contact-btn:hover {
+   background-color: var(--COLOR1);
+   cursor: pointer;
+ }
+ 
+ .contact-btn:active {
+   background-color: red;
+   cursor: pointer;
+ }
+
+ .orbit {
+   text-align: center;
+   padding: 40px;
+   margin: 10px;
+   position: relative;
+   font-family: var(--FF);
+ }
+
+ .orbit::after {
+   content:'';
+   height:1px;
+   width:10%;
+   background:var(--COLOR2);
+   position: absolute;
+   left:178px;
+   bottom:30px;
+ }
+
+ .orbit_des {
+   padding:10px;
+   text-align:center;
+   margin:10px;
+   font-family: var(--FF);
+ }
+
+ .logo_im {
+   width: 320px;
+   height: 130px;
+   margin: 45px;
+   border: 1px solid grey;
+   padding: 5px;
+   align-self: center;
+ }
+
+ .past_alumni {
+   text-align: center;
+   padding: 40px;
+   margin: 10px;
+   position: relative;
+   font-family: var(--FF);
+ }
+
+ .past_alumni::after {
+   content:'';
+   height:1px;
+   width:10%;
+   background:var(--COLOR2);
+   position: absolute;
+   left:178px;
+   bottom:30px;
+ }
+
+ .alumni_des {
+   padding:10px;
+   text-align:center;
+   margin:10px;
+   font-family: var(--FF);
+ }
+
+ .gallery {
+   padding: 34px;
+ }
+
+ .pic_2020,
+ .pic_2021 {
+   width: 350px;
+   margin-bottom: 30px;
+ }
+
+ .gallery .gallery_pic1 {
+   background:rgb(251, 124, 124, 0.4);
+   width: 350px;
+   height: 235px;
+   position: absolute;
+ }
+ .gallery .gallery_pic2 {
+   background:rgb(251, 124, 124, 0.4);
+   width: 350px;
+   height: 235px;
+   position: absolute;
+ }
+
+ .text {
+   color: white;
+   font-family: var(--FF);
+   text-align: center;
+   justify-content: center;
+   padding: 80px;
+   font-weight: bold;
+ }
+
+ .partners {
+   background-color: var(--COLOR1);
+ }
+
+ .partner {
+   text-align: center;
+   padding: 40px;
+   margin: 10px;
+   position: relative;
+   font-family: var(--FF);
+   color:white;
+ }
+ .partner_home {
+   text-align: center;
+   padding: 40px;
+   margin: 10px;
+   position: relative;
+   font-family: var(--FF);
+   color:white;
+ }
+
+ .partner::after {
+   content:'';
+   height:2px;
+   width:15%;
+   background:var(--COLOR2);
+   position: absolute;
+   left:170px;
+   bottom:30px;
+ }
+ .partner_home::after {
+   content:'';
+   height:2px;
+   width:15%;
+   background:var(--COLOR2);
+   position: absolute;
+   left:170px;
+   bottom:30px;
+ }
+
+ .durham_college {
+   width: 220px;
+   height: 100px;
+   padding:5px;
+ }
+
+ .blue_crest {
+   width: 150px;
+   /* margin-right: 50px; */
+ }
+
+ .power_technology {
+   width:150px;
+   height:100px;
+   /* padding:10px;
+   margin:10px; */
+ }
+
+ .trilogy_innovation {
+   width:150px;
+   /* padding:10px;
+   margin:10px; */
+ }
+
+ .group1,
+ .group2 {
+   display: flex;
+ }
+
+ .group2 {
+   justify-content: space-between;
+ }
+
+ .footer_wrapper {
+   padding:40px;
+ }
+
+ .footer_info {
+   display: flex;
+   justify-content: space-evenly;
+ }
+
+ .copyright {
+   font-family: var(--FF);
+   font-weight: bold;
+ }
+ 
+ .change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+ .facebook {
+   width:20px;
+   height:20px;
+ }
+ 
+ .page,
+ .page_out {
+   color: white;
+ }
+
+ .nav-logo {
+   width:150px;
+   height: auto;
+   margin-left: 30px;
+ }
+
+ .header_wrapper {
+   display: none;
+ }
+ .see {
+   display: none;
+ }
+
+ .navigation {
+   display: none;  
+  position: fixed;
+  z-index: 100;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #EC5242;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(15px);
+ }
+ 
+ .btn-wrapper {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+.close_btn {
+  border: none;
+  cursor: pointer;
+  width: 45px;
+  outline: none;
+  background: none;
+}
+
+.desktop_nav {
+  display: none;
+}
+
+.nav_wrapper_desk {
+  margin-left: 250px;
+}
+
+.nav_items {
+  font-size: 3em;
+  align-items: center;
+  margin-left: 50px;
+  padding: 20px;
+  font-family: var(--FF);
+}
+
+a.email {
+  margin-left: 120px;
+  color:#272A31;
+}
+
+#error {
+  color: red;
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+small {
+  font-family: var(--FF);
+}
+
+.course_lecturers {
+  margin-left: 10px;
+}
+
+@media (max-width:767px) {
+  .hide {
+    display: none !important;
+  }
+}
+
+ /* ----MEDIA QUERIES SECTION---- */
+
+/* || DESKTOP VERSION */
+ @media  (min-width:768px) {
+ .container {
+   width:100%;
+   background-size: contain;
+   background-repeat: repeat;
+   background-position: center;
+   /* background-attachment: fixed; */
+   height: 120vh;
+ }
+ 
+ .header_wrapper {
+   display: block !important;
+   background-color: var(--COLOR1);
+ }
+
+ .header_items {
+   display: flex;
+   padding: 5px 5px;
+   gap: 6%;
+   align-items: center;
+   flex-direction: row;
+   margin-left: 900px;
+ }
+
+ .desktop_nav {
+  display: inline-flex;
+  background-color: white;
+  width: 100%;
+}
+
+ .nav_wrapper li {
+   display: inline-block;
+
+ }
+
+ .nav_items_desk{
+   padding: 15px 15px;
+   margin: 10px;
+ }
+
+ .nav_link_deskA,
+ .nav_link_deskB,
+ .disable-link_desk {
+   font-family: var(--FF);
+ }
+
+ .disable-link_desk {
+   color: var(--COLOR1);
+ }
+
+ .nav_link_deskA,
+ .nav_link_deskB {
+   color: var(--COLOR2);
+ }
+
+ .nav_link_deskB{
+   border: 4px solid #EC5242;
+ }
+
+ .hero_box {
+   margin-top: -10px;
+}
+
+.hero_heading {
+ padding-top: 35px;
+ padding-left: 220px;
+ font-size: 2em;
+ font-family: var(--FF);
+}
+
+.hero_headingA {
+ padding-top: 50px;
+ padding-left: 100px;
+ font-size: 2em;
+ font-family: var(--FF);
+ text-align: center;
+ position: relative;
+}
+
+.hero_title {
+padding-left: 220px;
+font-size: 3em;
+}
+
+.hero_titleA {
+padding-left: 100px;
+font-size: 2em;
+}
+
+ .hero_description {
+   padding-left: 220px; 
+   width: 63%;
+   margin-left: 10px;
+   background-color: rgb(242, 242, 242);
+   font-family: var(--FF);
+ }
+ .hero_descriptionA {
+    padding-left: 220px;
+   width: 63%;
+   margin-left: 10px;
+   background-color: white;
+   font-family: var(--FF);
+ }
+
+ .des2 {
+   padding-top: 50px;
+   padding-left: 220px;
+   font-size: 2em;
+   font-family: var(--FF) ;
+ }
+
+ .des3 {
+   padding-top: 2px;
+   padding-left: 220px;
+   font-size: 2em;
+ }
+
+ .courses {
+   height: auto;
+ }
+ 
+ .course_catalogue {
+   display: inline-flex;
+ }
+
+ .python,
+ .Java_Programming,
+ .Redux_React,
+ .Andriod_N_Developer,
+ .Cyber_security {
+   width:220px;
+   height: 220px;
+   display: flex;
+   flex-direction: column;
+   gap: 2px;
+ }
+
+ .Btn {
+   display: none;
+ }
+
+ .programs {
+   font-family: var(--FF);
+ }
+ .see_program {
+   text-align: center;
+   color: white;
+   padding: 45px;
+   font-family: var(--FF);
+ }
+
+ .programs::after {
+   content:'';
+   height:2px;
+   width:3%;
+   background:var(--COLOR2);
+   position: absolute;
+   left:650px;
+   bottom:40px;
+ }
+
+ ul.python,
+ ul.Java_Programming,
+ ul.Redux_React,
+ ul.Andriod_N_Developer,
+ ul.Cyber_security {
+   text-align: center;
+ }
+
+ .python_des,
+ .Java_des,
+ .RR_des,
+ .AND_des,
+ .CS_des {
+   font-family: var(--FF);
+   font-size: small;
+ }
+
+ .python,
+ .Java_Programming,
+ .Redux_React,
+ .Andriod_N_Developer,
+ .Cyber_security {
+ margin-left: 25px;
+ align-items: center;
+ /* justify-content: space-around; */
+ }
+
+ .dropdown {
+   display: none;
+ }
+
+ .hidden_features {
+   display: contents;
+ }
+
+ .featured_lecturers {
+   font-family: var(--FF);
+ }
+
+ .featured_lecturers::after {
+   content:'';
+   height:2px;
+   width:3%;
+   background:var(--COLOR2);
+   position: absolute;
+   left:650px;
+   bottom:40px;
+ }
+
+  .course_lecturers {
+   display: inline-grid;
+   grid-template-columns: auto auto;
+   margin-left: 100px;
+   padding: 10px;
+ }  
+
+ .lecturer_name,
+ .lecturer_title {
+   font-family: var(--FF);
+   font-size: small;
+ }
+
+ .partner_home::after {
+   content:'';
+   height:2px;
+   width:3%;
+   background:var(--COLOR2);
+   position: absolute;
+   left: 650px;
+   bottom:30px;
+ }
+
+ .group1,
+ .group2 {
+   display: inline-block;
+   align-content: center;
+   margin-left: 300px;
+   margin-top: -20px;
+ }
+
+ .partner {
+    margin-top: 20px;
+ }
+
+ .desktop_partners ul {
+   margin-left: 330px;
+ }
+
+ .menu_btn {
+   display: none;
+ }
+
+ .containerA {
+   width: auto;
+ }
+
+ .about {
+   width: 100%;
+ }
+
+ .contact_orbit {
+   margin-top: -150px;
+ }
+  .contact {
+   height: 80vh;
+  }
+
+ input {
+   width: 447px;
+   height: 48px;
+ }
+
+ textarea {
+   width: 447px;
+   height: 170px;
+ }
+
+ .contact-btn {
+   margin-left: 150px;
+ }
+  
+ .orbit::after {
+   content:'';
+   height:1px;
+   width:3%;
+   background:var(--COLOR2);
+   position: absolute;
+   left:650px;
+   bottom:30px;
+ }
+
+ .logo_im {
+  width: 400px;
+  height: 200px;
+  margin-left: 490px;
+ }
+
+ .past_alumni::after {
+   content:'';
+   height:1px;
+   width:3%;
+   background:var(--COLOR2);
+   position: absolute;
+   left:650px;
+   bottom:30px;
+ }
+
+ .gallery .gallery_pic1 {
+   background:rgb(251, 124, 124, 0.4);
+   width: 350px;
+   height: 240px;
+   left: 304px;
+   bottom: -1426px;
+   position: absolute;
+ }
+
+ .gallery .gallery_pic2 {
+   background:rgb(251, 124, 124, 0.4);
+   width: 350px;
+   height: 235px;
+   right: 321px;
+   bottom: -1426px;
+   position: absolute;
+ }
+
+ .gallery {
+   margin-left: 260px;
+ }
+
+ .pic_2020,
+ .pic_2021 {
+   margin: 10px;
+ }
+
+ .mobile_partners {
+   display: none;
+ }
+
+ .partner {
+   display: none;
+ }
+
+ .footer_home {
+ background-color: white;
+ }
+
+ .footer {
+   background-color: var(--COLOR1);
+ }
+
+.copyright,
+.reserved {
+   color: white;
+}
+
+.copyright_home,
+.reserve_home {
+   font-family: var(--FF);
+}
+
+.see {
+   display: contents;
+}
+
+.courses {
+   position: relative;
+}
+
+.btn_wrapper {
+  display :none;
+}
+
+a.email {
+  margin-left: 580px;
+  color: var(--COLOR1);
+  font-size: large;
+}
+ small {
+  font-size: x-small;
+ }
+}
